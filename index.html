@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Form</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500,500i,700,800" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>The Code Review</h1>
+  </header>
+  <div class="wrapper">
+    <h2 class="front">Signup for our newsletter</h2>
+    <p class="mainhead">Get the latest news on how your code is doing right in your Inbox</p>
+
+      <form action="index.html" method="post" >
+        <fieldset class="unu">
+          <legend>Contact Information</legend>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name"    name="user_name" placeholder="Required">
+
+          <label for="email">Email address:</label>
+          <input type="email" id="email" name="user_email" placeholder="Required">
+
+          <label for="number">Phone Number:</label>
+          <input type="tel" id="number" name="user_number">
+
+          <label for="address">Street address:</label>
+          <input type="text" id="address" name="user_address">
+
+          <label for="city">City:</label>
+          <input type="text" id="city" name="user_city">
+
+          <label for="state">State:</label>
+          <select id="state" name="user_state">
+            <option value="" disabled selected>Chose state</option>
+            <option value="galati">Alaska</option>
+            <option value="iftode_dany">Alabama</option>
+            <option value="iftode_petru">Florida</option>
+            <option value="iftode_gica">Michigan</option>
+            <option value="iftode_nicoleta">New York</option>
+            <option value="iftode_cosmin">Washington</option>
+          </select>
+
+        <label for="zipcode">Zip Code:</label>
+        <input type="number" id="zipcode" name="user_zipcode">
+      </fieldset>
+    <fieldset class="doi">
+    <legend>News letter</legend>
+    <p class="grey">Select the newsletters you would like to recieve</p>
+      <input type="checkbox" id="html" value="interest_html" name="user_html"><label for="html">Html</label><br>
+      <input type="checkbox" id="css" value="interest_css" name="user_css"><label for="css">Css</label><br>
+      <input type="checkbox" id="javascript" value="interest_javascript" name="user_javascript"><label for="javascript">Javascript</label><br>
+      <h2 class="grey">Newsletter format</h2>
+      <input type="radio" id="radio_html" value="format_html" name="format_letter"><label for="radio_html">Html</label><br>
+      <input type="radio" id="radio_plain" value="format_text" name="format_letter"><label for="radio_plain">Plain text</label>
+    </fieldset>
+    </form>
+  <footer>
+    <p class="grey">Other topics you'd like to hear about</p>
+    <textarea id="text_here" name="user_coment" placeholder=""></textarea>
+    <button type="submit" name="button">Sign Up</button>
+    <h5 class="grey last">Copyright The Code Review</h5>
+  </footer>
+</div>
+
+</body>
+</html>
