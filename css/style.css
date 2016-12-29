@@ -182,4 +182,7 @@ main input:last-of-type{
   width: 74%;
   display: inline-block;
 }
+#text_here:focus {
+  border: 3px solid blue;
+}
 }
